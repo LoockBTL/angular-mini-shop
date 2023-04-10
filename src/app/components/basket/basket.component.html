@@ -1,0 +1,13 @@
+<div class="products">
+    <div *ngFor="let product of products"  class="products__item">
+        <img class="products__img" src="{{product.product.image}}" alt="{{ product.product.title }}">
+        <p class="products__title">{{ product.product.title }}</p>
+        <p>Price: {{product.product.price * product.amount | currency}}</p>
+        <p class="products__description">Amount: {{ product.amount}}</p>
+<div class="products__buttons">
+            <button class="products__btn" (click)="increment(product.product.id)">+</button>
+            <button class="products__btn"(click)="dicrement(product.product.id)">-</button>
+            <button class="products__btn"(click)="deleteProduct(product.product.id)">Delete</button>
+</div>
+    </div>
+</div>

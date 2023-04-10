@@ -1,0 +1,36 @@
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80vw;
+  margin: 0 auto;
+  &__item {
+    width: 25vw;
+    padding: 5px;
+    margin: 5px;
+    background-color: rgb(51, 51, 51);
+    border-radius: 15px;
+    border: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    font-family: sans-serif;
+  }
+  &__img {
+    width: auto;
+    height: 500px;
+  }
+  &__title {
+    font-size: 32px;
+  }
+  &__category {
+    font-weight: bold;
+  }
+  &__btn {
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+    background-color: red;
+    border-radius: 50px;
+  }
+}
